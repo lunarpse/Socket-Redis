@@ -11,8 +11,8 @@ services:
       - 3001:3001
     environment:
       NEXTAUTH_URL: http://localhost:3001
-      NEXTAUTH_GOOGLE_CLIENT_ID: "863158317797-92rg1as3k6e6mhs70h9hcmphpsjdbrul.apps.googleusercontent.com"
-      NEXTAUTH_GOOGLE_CLIENT_SECRET: "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"
+      NEXTAUTH_GOOGLE_CLIENT_ID: ""
+      NEXTAUTH_GOOGLE_CLIENT_SECRET: ""
       NEXTAUTH_SECRET: "sdfdsfdsf283y892y"
     depends_on :
       - backend
@@ -23,7 +23,7 @@ services:
     ports:
       - 8000:8000
     environment:
-      DATABASE_URL: "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNGQwMzE4MzQtM2I5Zi00NmFlLWFlMWItMDY3MGQyNGQ3YTUxIiwidGVuYW50X2lkIjoiYmViNTgyMmY1ZjJhZGM3MjU0YTQ3ZjFhZmIzNGQ3YWFlMDI2OWJjNjE0MmE5ZGE0YjY2OGNmODdmMzViNzk3YSIsImludGVybmFsX3NlY3JldCI6ImFhYmVjZDZjLTJkMGItNDg4Yy04YTM3LTI1Zjk4MDExZTNlZSJ9.X_cAXgogQLKUnt8m5EVEXZc8qE_Wo8HMZ72sU6hsyFM"
+      DATABASE_URL: ""
     volumes:
       - ./driver-server:/app
       - /app/node_modules
